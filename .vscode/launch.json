@@ -59,6 +59,13 @@
       "request": "launch",
       "url": "http://localhost:4200/#",
       "webRoot": "${workspaceFolder}"
+    },
+    {
+      "name": "Launch Chrome datacenter-scratch on Angular CLI Server (8)",
+      "type": "chrome",
+      "request": "launch",
+      "url": "http://localhost:4200/#",
+      "webRoot": "${workspaceFolder}"
     }
   ]
 }{
