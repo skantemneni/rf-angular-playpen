@@ -1,4 +1,5 @@
-<div class="modal-header">
+<!-- For some reason, model-header class has a display=Flex that kind of warps things around.  reset it to block -->
+<div class="modal-header" style="display: block;">
   <button type="button" class="close" aria-label="Close" (click)="activeModal.dismiss()">
     <span aria-hidden="true">&times;</span>
   </button>
@@ -6,12 +7,12 @@
 </div>
 <div class="modal-body container">
   <div class="col-xs-6">
-    <app-metric [used]="node.cpu.used" [available]="node.cpu.available">
+    <app-metric [used]="node.cpu.used" [available]="node.cpu.available" [title]="'CPU'">
       <!-- <metric-title>CPU</metric-title> -->
     </app-metric>
   </div>
   <div class="col-xs-6">
-    <app-metric [used]="node.mem.used" [available]="node.mem.available">
+    <app-metric [used]="node.mem.used" [available]="node.mem.available" [title]="'Memory'">
       <!-- <metric-title>Memory</metric-title> -->
     </app-metric>
   </div>
